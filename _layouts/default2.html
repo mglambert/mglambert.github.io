@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="/assets/css/atom-one-light.css">
+
+
+	<script src="/assets/js/highlight.pack.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script  type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+    <link rel="shortcut icon" href="/assets/img/M.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/img/M.ico" type="image/x-icon">
+
+    <title>{{site.title}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .my_post {
+            text-align: justify; 
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            margin-left: 10px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/">MgLambert</a>
+        </div>
+        <a href="/me">About</a>
+    </div>
+    <div class="my_post" style="width: 60%; margin: 0 auto;">
+        {{ content }}
+    </div>
+</body>
+</html>

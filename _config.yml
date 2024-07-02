@@ -1,0 +1,30 @@
+permalink: /:year:month:day/:title
+
+domain: ""       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: "" # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: "" 
+
+# variables
+name: mglambert
+description: mglambert blog
+google_verification: null
+linkedin : https://www.linkedin.com/in/mglambertv/
+linkedin : https://github.com/mglambert
+
+
+# File management
+include: [".htaccess"]
+exclude: ["README.md"]
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable : true
+
